@@ -11,7 +11,7 @@ if(num[i]>=0){
 			res+=num[i]+"*x^"+i+"+";
 		}
 		else {
-			res+="("+num[i]+")"+"x^"+i+"+";
+			res+="("+num[i]+")"+"*x^"+i+"+";
 		}
 }
 alert ("F(x)=" + res.substring(0, res.length - 1));
