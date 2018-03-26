@@ -14,7 +14,7 @@ if(num[i]>=0){
 			res+=num[i]+"x^"+i+"+";
 		}
 }
-alert ("F(x)=" + res);
+alert ("F(x)=" + res.substring(0, res.length - 1));
 var x = prompt ("Enter x");
 for(var i=0; i<N; i++){
 res2+=num[i]*Math.pow(x,i);
