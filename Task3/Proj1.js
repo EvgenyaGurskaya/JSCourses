@@ -33,5 +33,8 @@ for (var k=0; k<N; k++) {
 					 alert(this.name+","+this.age+","+this.place);
 				 }
 	};
+	people=people.sort(function(a,b){
+	return a.age< b.age ? 1:-1;
+})
 	people[k].printMe();
 }	
