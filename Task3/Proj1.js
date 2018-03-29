@@ -26,9 +26,9 @@ else if (M<city.length) {
 }
 var people = new Array (N);
 for (var k=0; k<N; k++) {
-	people[k]= { name: names[Math.random()*(N-1)],
+	people[k]= { name: names[Math.round(Math.random()*(N-1))],
 				 age: Math.round(1+99*Math.random()),
-				 place: city[Math.random()*(M-1)],
+				 place: city[Math.round(Math.random()*(M-1))],
 				 printMe: function() {
 					 alert(this.name+","+this.age+","+this.place);
 				 }
