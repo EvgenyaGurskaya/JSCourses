@@ -33,9 +33,5 @@ for (var k=0; k<N; k++) {
 					 alert(this.name+","+this.age+","+this.place);
 				 }
 	};
-	//alert ("People:"+people[k]);
+	people[k].printMe();
 }	
-for (var key1 in people)
-   for (var key2 in people [key1])
-      alert (key1 + ' : ' + people [key1] [key2]);
-
