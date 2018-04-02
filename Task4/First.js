@@ -1,4 +1,5 @@
-document.getElementById('1').innerText = location.href;
+var a1=location.href;
+document.getElementById('1').innerText = a1;
 document.getElementById('2').innerText = location.host;
 document.getElementById('3').innerText = location.hash;
 document.getElementById('4').innerText = location.port;
