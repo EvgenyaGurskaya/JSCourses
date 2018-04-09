@@ -1,0 +1,61 @@
+<html>
+<head>
+<style type="text/css">
+    input[type=button]
+    {
+        width: 40px;
+        height: 20px;
+    }
+</style>
+</head>
+<body>
+<div id ="calculator">
+	<form id="calcForm">
+		<div>
+			<input type="text" size="29" id="Calc"/>
+		</div>
+		<div>
+			<input type="button" value="MR" onclick='memoryRead()'>  
+			<input type="button" value="MS" onclick='memorySave()'>
+			<input type="button" value="MC" onclick='memoryClear()'>
+			<input type="button" value="M+" onclick='memoryPos()'>
+			<input type="button" value="M-" onclick='memoryNeg()'>
+		</div>    
+
+		<div>
+			<input type="button" value="7" onclick='valueof("7")'>
+			<input type="button" value="8" onclick='valueof("8")'>
+			<input type="button" value="9" onclick='valueof("9")'>
+			<input type="button" value="√" onclick='valueof("Math.sqrt()")'> 
+			<input type="button" value="C" onclick='delLast()'> 
+		</div>
+
+		<div>	  
+			<input type="button" value="4" onclick='valueof("4")'>
+			<input type="button" value="5" onclick='valueof("5")'> 
+			<input type="button" value="6" onclick='valueof("6")'> 
+			<input type="button" value="%" onclick='valueof("%")'>
+			<input type="button" value="-" onclick='valueof("-")'>
+		</div>
+
+      
+		<div>
+			<input type="button" value="1" onclick='valueof("1")'>
+			<input type="button" value="2" onclick='valueof("2")'>
+			<input type="button" value="3" onclick='valueof("3")'>
+			<input type="button" value="/" onclick='valueof("/")'>
+			<input type="button" value="+" onclick='valueof("+")'>
+		</div>
+       
+        <div>
+    	    <input type="button" value="0" onclick='valueof("0")'>
+			<input type="button" value="00" onclick='valueof("00")'>
+			<input type="button" value="." onclick='valueof(".")'>
+			<input type="button" value="*" onclick='valueof("*")'>
+			<input type="button" value="=" onclick='Res()'>
+		</div>
+	</form>
+</div>
+<script src="Form1.js"></script>
+</body>
+</html>
